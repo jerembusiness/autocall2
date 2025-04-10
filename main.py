@@ -277,7 +277,7 @@ def debit_credits(user_id):
 
     # Délai entre chaque débit (5 à 10 minutes)
     while user_data["credits"] > 0:
-        time.sleep(random.randint(300, 600))  # Entre 5 et 10 minutes
+        time.sleep(random.randint(300, 3600))  # Entre 5 et 10 minutes
 
         # Calcul des crédits à débiter à chaque intervalle
         debit = random.randint(1, 5)  # Débit aléatoire entre 1 et 5 crédits
